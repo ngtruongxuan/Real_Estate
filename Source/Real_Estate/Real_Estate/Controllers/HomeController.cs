@@ -14,9 +14,6 @@ namespace Real_Estate.Controllers
 
 
 
-
-
-
         }
 
         public ActionResult About()
