@@ -1,0 +1,223 @@
+﻿@{
+    ViewBag.Title = "insert";
+}
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label class="col-md-3">Property </label>
+            @*<input class="col-md-9" type="text"></input>*@
+            
+            <div class="input_search col-md-9" style="padding: 0px;">
+                <select id="loai_bds" name="loai_bds" style="height: 28px; width: 100%; padding-left: 0px;">
+                    <option selected="selected" value="0">Select Property</option>
+                    <option value="3">Apartment for rent</option>
+                    <option value="159">Other</option>
+                    <option value="21">Townhouse/Office</option>
+                    <option value="1">Villa for rent</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group col-md-6">
+            <label class="col-md-3">Location </label>
+            @*<input class="col-md-9" type="text"></input>*@
+            <div class="input_search col-md-9" style="padding: 0px;">
+                <select id="loai_bds" name="loai_bds" style="height: 28px; width: 100%; padding-left: 0px;">
+                    <option selected="selected" value="0">Select Location</option>
+                    <option value="Apartment for rent" id="3">Apartment for rent</option>
+                    <option value="District 7" id="160">District 7</option>
+                    <option value="Villa for rent" id="1">Villa for rent</option>
+                    <option value="Townhouse/Office" id="21">Townhouse/Office</option>
+                    <option value="Other" id="159">Other</option>
+                    <option value="Canh Vien" id="130">Canh Vien</option>
+                    <option value="Garden Plaza " id="131">Garden Plaza </option>
+                    <option value="Garden Court " id="132">Garden Court </option>
+                    <option value="Grandview" id="133">Grandview</option>
+                    <option value="Greenview" id="134">Greenview</option>
+                    <option value="My An" id="136">My An</option>
+                    <option value="Hung Gia" id="151">Hung Gia</option>
+                    <option value="My Canh" id="137">My Canh</option>
+                    <option value="Hung Phuoc" id="152">Hung Phuoc</option>
+                    <option value="Lam Thien Luc Dia" id="114">Lam Thien Luc Dia</option>
+                    <option value="My Duc" id="138">My Duc</option>
+                    <option value="My Toan" id="153">My Toan</option>
+                    <option value="My Giang" id="115">My Giang</option>
+                    <option value="My Khang" id="139">My Khang</option>
+                    <option value="My Hoang" id="154">My Hoang</option>
+                    <option value="My Hao" id="116">My Hao</option>
+                    <option value="My Khanh" id="140">My Khanh</option>
+                    <option value="My Hung" id="155">My Hung</option>
+                    <option value="My Hoang" id="117">My Hoang</option>
+                    <option value="My Phat" id="141">My Phat</option>
+                    <option value="My Hung" id="118">My Hung</option>
+                    <option value="My Phuc" id="142">My Phuc</option>
+                    <option value="My Kim" id="119">My Kim</option>
+                    <option value="My Phuoc" id="143">My Phuoc</option>
+                    <option value="My Quang" id="120">My Quang</option>
+                    <option value="My Vien" id="144">My Vien</option>
+                    <option value="My Tu" id="121">My Tu</option>
+                    <option value="Nam Khang" id="145">Nam Khang</option>
+                    <option value="My Phu" id="122">My Phu</option>
+                    <option value="Panorama" id="146">Panorama</option>
+                    <option value="My Thai" id="123">My Thai</option>
+                    <option value="Parkview" id="147">Parkview</option>
+                    <option value="My Van" id="124">My Van</option>
+                    <option value="Riverpark" id="148">Riverpark</option>
+                    <option value="Nam Do" id="125">Nam Do</option>
+                    <option value="Riverside" id="149">Riverside</option>
+                    <option value="Nam Long" id="126">Nam Long</option>
+                    <option value="Sky Garden " id="150">Sky Garden </option>
+                    <option value="Nam Quang" id="127">Nam Quang</option>
+                    <option value="Nam Thien" id="128">Nam Thien</option>
+                    <option value="Phu Gia" id="129">Phu Gia</option>
+                    <option value="Phu My" id="156">Phu My</option>
+                    <option value="Hung Thai" id="158">Hung Thai</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label class="col-md-3">Title English</label>
+            <input class="col-md-9" type="text" style="width:100%; height:100px;"></input>
+        </div>
+        <div class="form-group col-md-6">
+            <label class="col-md-3">Title Viet </label>
+            <input class="col-md-9" type="text" style="width:100%; height:100px;"></input>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label class="col-md-3">Price</label>
+            <input class="col-md-9" type="text"></input>
+        </div>
+        <div class="form-group col-md-6">
+            <label class="col-md-3">Size </label>
+            <input class="col-md-9" type="text"></input>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label class="col-md-3">Floor</label>
+            <input class="col-md-9" type="text"></input>
+        </div>
+        <div class="form-group col-md-6">
+            <label class="col-md-3">View </label>
+            <input class="col-md-9" type="text"></input>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label class="col-md-3">Bathroom</label>
+            <input class="col-md-9" type="text"></input>
+        </div>
+        <div class="form-group col-md-6">
+            <label class="col-md-3">Bedroom </label>
+            <input class="col-md-9" type="text"></input>
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-6">
+            <label class="col-md-3">Status</label>
+            <input class="col-md-9" type="text"></input>
+        </div>
+
+    </div>
+
+    
+</div>
+
+<div id="detail" class="row">
+    <span>Detail</span>
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label class="form-group col-md-2">Overview Conveniences : </label>
+            <input class="form-group col-md-9" type="text" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="form-group col-md-12">
+            <label class="form-group col-md-2">Distances : </label>
+            <input class="form-group col-md-9" type="text" style="width:600px;" />
+        </div>
+    </div>
+</div>
+
+
+
+<form id="form1" runat="server">
+    <input type='file' id="imgInp" />
+    <img id="blah" src="#" alt="your image" />
+</form>
+<script>
+    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#imgInp").change(function () {
+        readURL(this);
+    });
+</script>
+
+
+
+
+
+<style>
+    .thumb {
+        height: 75px;
+        border: 1px solid #000;
+        margin: 10px 5px 0 0;
+    }
+</style>
+
+<input type="file" id="files" name="files[]" multiple />
+<output id="list"></output>
+
+<script>
+    function handleFileSelect(evt) {
+        var files = evt.target.files; // FileList object
+
+        // Loop through the FileList and render image files as thumbnails.
+        for (var i = 0, f; f = files[i]; i++) {
+
+            // Only process image files.
+            if (!f.type.match('image.*')) {
+                continue;
+            }
+
+            var reader = new FileReader();
+
+            // Closure to capture the file information.
+            reader.onload = (function (theFile) {
+                return function (e) {
+                    // Render thumbnail.
+                    var span = document.createElement('span');
+                    span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                                      '" title="', escape(theFile.name), '"/>'].join('');
+                    document.getElementById('list').insertBefore(span, null);
+                };
+            })(f);
+
+            // Read in the image file as a data URL.
+            reader.readAsDataURL(f);
+        }
+    }
+
+    document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>
