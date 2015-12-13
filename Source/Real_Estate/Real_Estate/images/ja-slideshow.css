@@ -1,0 +1,103 @@
+/*------------------------------------------------------------------------
+
+# JA SlideShow
+
+# ------------------------------------------------------------------------
+
+# Copyright (C) 2004-2006 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+
+# @license - Copyrighted Commercial Software
+
+# Author: J.O.O.M Solutions Co., Ltd
+
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+
+-------------------------------------------------------------------------*/
+#ja-slideshowwrap {
+	float: left;
+	width: 59.9%;
+	position: relative;
+}
+
+.ja-slideshow-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 210px;
+	width: 100%;
+	background: url(../images/mask-slideshow.png) no-repeat;
+	display: block;
+	z-index: 1;
+}
+
+#ja-slideshow {
+	margin-left: 10px;
+}
+
+#ja-slideshow div.moduletable {
+	margin: 0;
+	padding: 0;
+}
+
+#ja-slideshow-wrap {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: 210px;
+}
+
+#ja-slideshow-case {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#ja-slidebar {
+	margin-left: 4px;
+	position: absolute;
+	top: 170px;
+	left: 10px;
+	display: block;
+	z-index: 2;
+}
+
+#ja-slidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#ja-slidebar ul li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	width: 20px;
+	height: 20px;
+}
+
+#ja-slidebar ul li.pause {
+	background: none;
+	display: none;
+}
+
+#ja-slidebar ul li a {
+	color: #4F4F4F;
+	cursor: pointer;
+	text-decoration: none;
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: 10px;
+	width: 20px;
+	height: 22px;
+	display: block;
+	float: left;
+	background: url(img/circle.png) no-repeat;
+	text-indent: 6px;
+	margin-right: 5px;
+	font-weight: bold;
+}
+
+#ja-slidebar ul li a:hover {
+	text-decoration: none;
+	color: #333333;
+}
+
