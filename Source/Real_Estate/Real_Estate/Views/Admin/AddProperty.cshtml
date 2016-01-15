@@ -6,3 +6,16 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
+<form role="form">
+    <div class="form-group col-sm-12 row">
+        <label for="inputdefault" class="col-sm-2">Default input</label>
+        <input class="form-control col-sm-10" id="property" type="text">
+    </div>
+    <button type="button" class="btn btn-default" onclick="btnAddProperty()">Insert</button>
+</form>
+
+<script>
+    function btnAddProperty() {
+        alert(document.getElementById("property").value);
+    }
+</script>

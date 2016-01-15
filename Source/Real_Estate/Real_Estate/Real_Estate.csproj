@@ -184,6 +184,7 @@
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Content Include="Content\admin.css" />
     <Content Include="Views\MasterPageAdmin\Header.cshtml" />
     <Content Include="Views\MasterPageAdmin\Footer.cshtml" />
     <Content Include="Views\DemoUpfile\Index.cshtml" />
