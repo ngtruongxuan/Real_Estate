@@ -6,18 +6,23 @@ using System.Web.Mvc;
 
 namespace Real_Estate.Controllers
 {
-    public class RealEstateController : Controller
+    public class AdminController : Controller
     {
-        public ActionResult Index(){
-            return View();
-        }
-        public ActionResult Detail()
+        //
+        // GET: /Addmin/
+       
+        public ActionResult AddRealEstate()
         {
             return View();
         }
-        public ActionResult Search()
+        public ActionResult AddProperty()
+        {
+            return View();
+
+        }
+        public ActionResult AddLocation()
         {
             return View();
         }
-    }
+	}
 }

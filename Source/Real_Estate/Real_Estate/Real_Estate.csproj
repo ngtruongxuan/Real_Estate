@@ -160,6 +160,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\DemoUpfileController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MasterPageAdminController.cs" />
@@ -186,6 +187,9 @@
     <Content Include="Views\MasterPageAdmin\Header.cshtml" />
     <Content Include="Views\MasterPageAdmin\Footer.cshtml" />
     <Content Include="Views\DemoUpfile\Index.cshtml" />
+    <Content Include="Views\Admin\AddRealEstate.cshtml" />
+    <Content Include="Views\Admin\AddProperty.cshtml" />
+    <Content Include="Views\Admin\AddLocation.cshtml" />
     <None Include="Views\Shared\_LayoutAdmin.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -280,13 +284,14 @@
     <Content Include="Views\MasterPage\Left.cshtml" />
     <Content Include="Views\MasterPage\Right.cshtml" />
     <Content Include="Views\MasterPage\Menu.cshtml" />
-    <Content Include="Views\RealEstate\index.cshtml" />
-    <Content Include="Views\RealEstate\insert.cshtml" />
-    <Content Include="Views\RealEstate\search.cshtml" />
+    <Content Include="Views\RealEstate\Index.cshtml" />
+    <Content Include="Views\RealEstate\Detail.cshtml" />
+    <Content Include="Views\RealEstate\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Upload\" />
+    <Folder Include="Views\Addmin\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

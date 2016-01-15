@@ -1,0 +1,162 @@
+﻿/* Clear Floated Elements
+
+----------------------------------------------------------------------------------------------------*/
+
+
+/** {
+    margin: 0;
+}*/
+/*html, body {
+    height: 100%;
+}*/
+/*.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}*/
+/*.footer, .push {
+    height: 142px; /* .push must be the same height as .footer */
+}*/
+
+
+
+
+
+
+
+
+/**********************************************************END PAGINATION****************************/
+
+
+
+#top{
+    background:url(images/icon_top.png) top right no-repeat;
+    padding-right:22px;
+    height:22px;
+    line-height:22px;
+    font-weight:bold;
+    float:right;
+}
+/*#top a{
+color:#0678ba;
+}
+#footer{
+overflow:hidden;
+border-top:1px solid #cacccd;
+padding-top:5px;
+margin-top:10px;
+}*/
+
+
+
+/*Begin dropdown menu*/
+ul.dropdown,ul.dropdown li,ul.dropdown ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+ul.dropdown {
+ position: relative;
+ z-index: 9997;
+
+}
+
+ul.dropdown li {
+ float: left;
+ line-height: 1.3em;
+ vertical-align: middle;
+ zoom: 1;
+ 
+}
+
+ul.dropdown li.hover,ul.dropdown li:hover {
+ position: relative;
+ z-index: 9999;
+ cursor: default;
+ 
+}
+
+ul.dropdown ul {
+ visibility: hidden;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ z-index: 9998;
+ width: 100%;
+}
+
+ul.dropdown ul li {
+ float: none;
+}
+
+ul.dropdown ul ul {
+ top: 0;
+ left: 100%;
+}
+
+ul.dropdown li:hover > ul {
+ visibility: visible;
+}
+
+ul.dropdown {
+ font-weight: bold;
+}
+
+ul.dropdown li {
+    padding: 0px 18px;
+    line-height: 55px;
+    color: #fff;
+}
+
+ul.dropdown li a {
+    color: #fff;
+}
+
+ul.dropdown li.hover,
+ul.dropdown li:hover, ul.dropdown li.menu_active {
+    background-color: #555555;
+    color: #fff;
+}
+
+ul.dropdown li.dir ul li:hover, ul.dropdown li.dir ul li.parent_active {
+    background: #555;
+}
+
+
+
+
+/*-------------------------------------------------*/
+#nav{
+background:#8eb003;
+height:55px;
+font-size:15px;
+font-weight:bold;
+margin:15px 0 10px;
+text-transform:uppercase;
+}
+#nav li#menu_41{
+padding:0 30px;
+}
+#nav li.parent_active span,ul.dropdown li.dir ul li.dir_parent li.child_active{
+text-decoration:underline;
+}
+ul.dropdown li.dir ul li{
+	background:#555;
+	padding:5px 10px !important;
+	line-height:1.8em;
+	text-transform:none;
+	font-size:14px;
+	font-weight:normal;
+}
+ul.dropdown li.dir ul li.dir_parent{
+border-bottom:1px solid #666;
+}
+ul.dropdown li.dir ul li.dir_parent li{
+background:#555;
+border-bottom:1px solid #666;
+}
+ul.dropdown li.dir ul li.dir_parent li a:hover,ul.dropdown li.dir ul li.parent_active li.child_active a{
+text-decoration:underline;
+}
