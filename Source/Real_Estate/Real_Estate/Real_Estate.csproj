@@ -188,7 +188,7 @@
     <Content Include="Views\MasterPageAdmin\Header.cshtml" />
     <Content Include="Views\MasterPageAdmin\Footer.cshtml" />
     <Content Include="Views\DemoUpfile\Index.cshtml" />
-    <Content Include="Views\Admin\AddRealEstate.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\AddProperty.cshtml" />
     <Content Include="Views\Admin\AddLocation.cshtml" />
     <None Include="Views\Shared\_LayoutAdmin.cshtml" />

@@ -11,7 +11,7 @@ namespace Real_Estate.Controllers
         //
         // GET: /Addmin/
        
-        public ActionResult AddRealEstate()
+        public ActionResult Index()
         {
             return View();
         }

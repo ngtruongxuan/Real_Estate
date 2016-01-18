@@ -11,8 +11,8 @@
             <label class="col-md-3">Property </label>
             @*<input class="col-md-9" type="text"></input>*@
 
-            <div class="input_search col-md-9" style="padding: 0px;">
-                <select id="loai_bds" name="loai_bds" style="height: 28px; width: 100%; padding-left: 0px;">
+            <div class="input_search col-md-7" style="padding: 0px;">
+                <select id="loai_bds" name="loai_bds" style="height: 30px; width: 100%; padding-left: 0px;">
                     <option selected="selected" value="0">Select Property</option>
                     <option value="3">Apartment for rent</option>
                     <option value="159">Other</option>
@@ -20,12 +20,15 @@
                     <option value="1">Villa for rent</option>
                 </select>
             </div>
+            <div class="col-md-2">
+                <button id="btnAddProperty" type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modalProperty">+</button>
+            </div>
         </div>
         <div class="form-group col-md-6">
             <label class="col-md-3">Location </label>
             @*<input class="col-md-9" type="text"></input>*@
-            <div class="input_search col-md-9" style="padding: 0px;">
-                <select id="loai_bds" name="loai_bds" style="height: 28px; width: 100%; padding-left: 0px;">
+            <div class="input_search col-md-7" style="padding: 0px;">
+                <select id="loai_bds" name="loai_bds" style="height: 30px; width: 100%; padding-left: 0px;">
                     <option selected="selected" value="0">Select Location</option>
                     <option value="Apartment for rent" id="3">Apartment for rent</option>
                     <option value="District 7" id="160">District 7</option>
@@ -63,19 +66,11 @@
                     <option value="My Phu" id="122">My Phu</option>
                     <option value="Panorama" id="146">Panorama</option>
                     <option value="My Thai" id="123">My Thai</option>
-                    <option value="Parkview" id="147">Parkview</option>
-                    <option value="My Van" id="124">My Van</option>
-                    <option value="Riverpark" id="148">Riverpark</option>
-                    <option value="Nam Do" id="125">Nam Do</option>
-                    <option value="Riverside" id="149">Riverside</option>
-                    <option value="Nam Long" id="126">Nam Long</option>
-                    <option value="Sky Garden " id="150">Sky Garden </option>
-                    <option value="Nam Quang" id="127">Nam Quang</option>
-                    <option value="Nam Thien" id="128">Nam Thien</option>
-                    <option value="Phu Gia" id="129">Phu Gia</option>
-                    <option value="Phu My" id="156">Phu My</option>
-                    <option value="Hung Thai" id="158">Hung Thai</option>
+
                 </select>
+            </div>
+            <div class="col-md-2">
+                <button id="btnAddProperty" type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#modelLoacation">+</button>
             </div>
         </div>
     </div>
@@ -138,8 +133,8 @@
             <label class="col-md-5">Overview Conveniences : </label>
             <input class="form-control col-md-7" id="overviewConveniences" type="text">
         </div>
-    @*</div>
-    <div class="row">*@
+        @*</div>
+            <div class="row">*@
         <div class="col-md-6">
             <label class="col-md-3">Distances : </label>
             <input class="form-control col-md-9" id="distances" type="text">
@@ -149,41 +144,82 @@
 <div id="realEstateImage">
     <h3>Image</h3>
     <div class="row">
-        <div class="form-group col-md-12" >
+        <div class="form-group col-md-12">
             <input type="file" id="files" name="files[]" multiple />
             <output id="list"></output>
         </div>
     </div>
-    
+
 </div>
 <div style="text-align:center">
     <button class="btn btn-success">Insert</button>
 </div>
 
 <!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+@*<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>*@
 
-<!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<!-- Modal Property -->
+<div id="modalProperty" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
+                <h4 class="modal-title">Insert New Property</h4>
             </div>
             <div class="modal-body">
-                <p>Some text in the modal.</p>
+                @*<p>Some text in the modal.</p>*@
+                <div class="row">
+                    <div class="col-lg-3">
+                        <label>Property Name</label>
+                    </div>
+                    <input type="text" class="form-control" />
+                </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer" style="text-align:center;">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
 
     </div>
 </div>
+<!--Modal Location-->
+<div id="modelLoacation" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Insert New Location</h4>
+            </div>
+            <div class="modal-body">
+                @*<p>Some text in the modal.</p>*@
+                <div class="row">
+                    <label class="col-lg-3">Location Name</label>
+                    <input type="text" class="form-control col-lg-9" id="location_name" />
+                </div>
+                <br />
+                <div class="row">
+                    <label class="col-lg-3">Propety</label>
+                    @*<input type="text" class="form-control col-lg-9" id="property_modal" />*@
+                    <select id="id_modal_property" name="loai_bds" style="height: 30px; width: 100%; padding-left: 0px;">
+                        <option selected="selected" value="0">Select Property</option>
+                        <option value="3">Apartment for rent</option>
+                        <option value="159">Other</option>
+                        <option value="21">Townhouse/Office</option>
+                        <option value="1">Villa for rent</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer" style="text-align:center;">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 @*theme image*@
 <style>
     .thumb {
