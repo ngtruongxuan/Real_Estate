@@ -4,7 +4,8 @@
 @{
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
-<div>
+<div id="realEstate">
+    <h3>Real Estate</h3>
     <div class="row">
         <div class="form-group col-md-6">
             <label class="col-md-3">Property </label>
@@ -82,102 +83,108 @@
     <div class="row">
         <div class="form-group col-md-6">
             <label class="col-md-3">Title English</label>
-            <input class="form-control col-sm-9" id="inputdefault" type="text">
+            <input class="form-control col-sm-9" id="titleEnglish" type="text">
         </div>
         <div class="form-group col-md-6">
             <label class="col-md-3">Title Viet </label>
-            <input class="form-control col-sm-9" id="inputdefault" type="text">
+            <input class="form-control col-sm-9" id="titleViet" type="text">
         </div>
     </div>
 
     <div class="row">
         <div class="form-group col-md-6">
             <label class="col-md-3">Price</label>
-            <input class="form-control col-sm-9" id="inputdefault" type="text">
+            <input class="form-control col-sm-9" id="price" type="text">
         </div>
         <div class="form-group col-md-6">
             <label class="col-md-3">Size </label>
-            <input class="form-control col-sm-9" id="inputdefault" type="text">
+            <input class="form-control col-sm-9" id="size" type="text">
         </div>
     </div>
 
     <div class="row">
         <div class="form-group col-md-6">
             <label class="col-md-3">Floor</label>
-            <input class="form-control col-sm-9" id="inputdefault" type="text">
+            <input class="form-control col-sm-9" id="floor" type="text">
         </div>
         <div class="form-group col-md-6">
             <label class="col-md-3">View </label>
-            <input class="form-control col-sm-9" id="inputdefault" type="text">
+            <input class="form-control col-sm-9" id="view" type="text">
         </div>
     </div>
 
     <div class="row">
         <div class="form-group col-md-6">
             <label class="col-md-3">Bathroom</label>
-            <input class="form-control col-sm-9" id="inputdefault" type="text">
+            <input class="form-control col-sm-9" id="bathroom" type="text">
         </div>
         <div class="form-group col-md-6">
             <label class="col-md-3">Bedroom </label>
-            <input class="form-control col-sm-9" id="inputdefault" type="text">
+            <input class="form-control col-sm-9" id="bedroom" type="text">
         </div>
     </div>
     <div class="row">
         <div class="form-group col-md-6">
-            <label class="col-md-3">Status</label>
-            <input class="form-control col-sm-9" id="inputdefault" type="text">
-        </div>
-
-    </div>
-
-
-</div>
-
-<div id="detail" class="row">
-    <span>Detail</span>
-    <div class="row">
-        <div class="form-group col-md-12">
-            <label class="form-group col-md-2">Overview Conveniences : </label>
-            <input class="form-control col-sm-9" id="inputdefault" type="text">
-        </div>
-    </div>
-    <div class="row">
-        <div class="form-group col-md-12">
-            <label class="form-group col-md-2">Distances : </label>
-            <input class="form-control col-sm-9" id="inputdefault" type="text">
+            <label class="col-md-3">Status </label>
+            <input class="form-control col-sm-9" id="status" type="text">
         </div>
     </div>
 </div>
 
+<div id="detail">
+    <h3>Detail</h3>
+    <div class="row">
+        <div class="col-md-6">
+            <label class="col-md-5">Overview Conveniences : </label>
+            <input class="form-control col-md-7" id="overviewConveniences" type="text">
+        </div>
+    @*</div>
+    <div class="row">*@
+        <div class="col-md-6">
+            <label class="col-md-3">Distances : </label>
+            <input class="form-control col-md-9" id="distances" type="text">
+        </div>
+    </div>
+</div>
+<div id="realEstateImage">
+    <h3>Image</h3>
+    <div class="row">
+        <div class="form-group col-md-12" >
+            <input type="file" id="files" name="files[]" multiple />
+            <output id="list"></output>
+        </div>
+    </div>
+    
+</div>
+<div style="text-align:center">
+    <button class="btn btn-success">Insert</button>
+</div>
 
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
-@*<form id="form1">
-    <input type='file' id="imgInp" />
-    <img id="blah" src="#" alt="your image" />
-</form>
-<script>
-    function readURL(input) {
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
 
-        if (input.files && input.files[0]) {
-            var reader = new FileReader();
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Modal Header</h4>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the modal.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
 
-            reader.onload = function (e) {
-                $('#blah').attr('src', e.target.result);
-            }
+    </div>
+</div>
 
-            reader.readAsDataURL(input.files[0]);
-        }
-    }
-
-    $("#imgInp").change(function () {
-        readURL(this);
-    });
-</script>*@
-
-
-
-
-
+@*theme image*@
 <style>
     .thumb {
         height: 75px;
@@ -185,9 +192,6 @@
         margin: 10px 5px 0 0;
     }
 </style>
-
-<input type="file" id="files" name="files[]" multiple />
-<output id="list"></output>
 
 <script>
     function handleFileSelect(evt) {
@@ -220,3 +224,26 @@
     }
     document.getElementById('files').addEventListener('change', handleFileSelect, false);
 </script>
+
+@*<form id="form1">
+        <input type='file' id="imgInp" />
+        <img id="blah" src="#" alt="your image" />
+    </form>
+    <script>
+        function readURL(input) {
+
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        $("#imgInp").change(function () {
+            readURL(this);
+        });
+    </script>*@
